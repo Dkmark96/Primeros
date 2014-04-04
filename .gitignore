@@ -1,0 +1,36 @@
+/*-----------------------------------------------------------
+PROGRAMA:	PRIMEROS.cpp 
+FECHA:		4/4/2014
+VERSION:	V1
+AUTOR:		MARCO SIÑANIZ
+OBS:		MUESTRA LA SUMA DE LOS N PRIMEROS NUMEROS NATURALES.
+------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main()
+{int N, C, S;
+printf("\n\n INGRESE LA CANTIDAD DE NATURALES A SUMAR:   ");
+scanf("%d", &N);
+while (N <= 0)
+  {printf("\n\n INGRESE LA CANTIDAD DE NATURALES A SUMAR:   ");
+   scanf("%d", &N);
+  }
+S = 0;
+C = 1;
+printf("\n\n %d",C);
+while (C <= N)
+  {S = S + C;
+   if(C>1)
+   {printf(" + %d ",C);
+   }
+   C = C + 1;
+  }
+printf(" = %d ",S);
+printf("\n\n ");
+system ("pause");
+}
